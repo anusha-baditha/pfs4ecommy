@@ -534,4 +534,5 @@ def invoice(ordid):
         response=Response(pdf,content_type='application/pdf')
         response.headers['Content-Disposition']='inline; filename=output.pdf'
         return response'''
-app.run(debug=True,use_reloader=True)
+if __name__=='__main__':
+    app.run()
